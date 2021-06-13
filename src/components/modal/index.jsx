@@ -25,12 +25,11 @@ export const Modal = ({ isOpen, onClose, modalData }) => {
           <span id="close-modal">X</span>
         </button>
 
-        <div className="modal-body">
-          {console.log(modalData)}
-          {Object.keys(modalData).map((key,ind) => {
+        <div className="modal-body">        
+          {Object.keys(modalData).map((key, ind) => {
             if (typeof modalData[key] === "string" && modalData[key]) {
               return (
-                <div key={ind.toString()+modalData.id}>
+                <div key={ind.toString() + modalData.id}>
                   {key}: {modalData[key]}
                 </div>
               );

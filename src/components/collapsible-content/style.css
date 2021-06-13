@@ -10,17 +10,17 @@
   padding-top: 30px;
 }
 
-.collapsible-list li{
+.collapsible-list li {
   position: relative;
   padding: 20px 40px 20px 0;
   min-height: 50px;
 }
 
-.collapsible-list li::marker{
+.collapsible-list li::marker {
   padding-left: 30px;
 }
 
-.collapsible-list li:nth-child(odd)::before{
+.collapsible-list li:nth-child(odd)::before {
   width: calc(100% + 130px);
   height: 90px;
   content: "";
@@ -30,7 +30,7 @@
   background: #ecf5f8;
   z-index: -1;
 }
-.collapsible-user-img{
+.collapsible-user-img {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -46,12 +46,11 @@
   background-color: #d8e2f6;
 }
 
-
-@media screen and (max-width: 768px){
-  .collapsible-list li:nth-child(2n+1)::before{
+@media screen and (max-width: 768px) {
+  .collapsible-list li:nth-child(2n + 1)::before {
     height: 100px;
   }
-  .collapsible-list li{
+  .collapsible-list li {
     padding: 20px 20px 20px 0;
     min-height: 50px;
   }

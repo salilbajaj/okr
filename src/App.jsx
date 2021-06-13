@@ -10,15 +10,15 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Router>
-        <div className="App">          
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="*">
-                <NotFound />
-              </Route>
-            </Switch>         
+        <div className="App">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
         </div>
       </Router>
     </Suspense>

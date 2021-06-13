@@ -1,7 +1,7 @@
 // file to store constants used across app
 
 export const OkrConstants = {
-    CATEGORIES:[
+  CATEGORIES: [
     "Company",
     "Sales",
     "Marketing",
@@ -10,8 +10,6 @@ export const OkrConstants = {
     "Product Management",
     "Engineering",
     "Administration",
-    ],
-    APIURL: "https://okrcentral.github.io/sample-okrs/db.json"
-}
-
-   
+  ],
+  APIURL: "https://okrcentral.github.io/sample-okrs/db.json",
+};

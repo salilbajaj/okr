@@ -2,14 +2,15 @@ import useFetch from "../../utils/useFetch";
 import Accordian from "../../components/accordian";
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import {OkrConstants } from "../../utils/Constant";
+import { OkrConstants } from "../../utils/Constant";
 
 // Landing page of the app
 const Home = () => {
-  const { error, isPending, data } = useFetch(OkrConstants.APIURL);  // fetches the required data via custom hook
-  const [filteredData, setFilteredData] = useState([]);   // state variable for okr data
+  const { error, isPending, data } = useFetch(OkrConstants.APIURL); // fetches the required data via custom hook
+  const [filteredData, setFilteredData] = useState([]); // state variable for okr data
 
-  const handleFilter = (val) => {  // method to handle category filters
+  const handleFilter = (val) => {
+    // method to handle category filters
     let filtered = val ? data.filter((item) => item.category === val) : data;
     setFilteredData(filtered);
   };
@@ -22,7 +23,7 @@ const Home = () => {
     <div className="main-container">
       <select
         className="select-category"
-        name="category"        
+        name="category"
         onChange={(e) => {
           handleFilter(e.target.value);
         }}

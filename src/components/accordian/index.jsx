@@ -9,16 +9,16 @@ import PropTypes from "prop-types";
 
 // Accordian component to display parent child objective and keys
 const Accordion = ({ title, objective }) => {
-  const [isActive, setIsActive] = useState(true);  // state to track if current accordian is open or closed
+  const [isActive, setIsActive] = useState(true); // state to track if current accordian is open or closed
   const [modalOpen, setModalOpen] = useState(false); // state to track if title of objective is clicked to show pop up
   return (
     <div className="accordion-item">
       <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
         <div>
           {isActive ? (
-            <img src={ArrowDown} className="accordian-angle" alt="arrow"/>
+            <img src={ArrowDown} className="accordian-angle" alt="arrow" />
           ) : (
-            <img src={ArrowRight} className="accordian-angle" alt="arrow"/>
+            <img src={ArrowRight} className="accordian-angle" alt="arrow" />
           )}
         </div>
 
