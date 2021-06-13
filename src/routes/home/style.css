@@ -1,0 +1,17 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.select-category {
+  height: 50px;
+  padding: 7px;
+  margin: 5px 0;
+}
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: calc(100% - 10%);
+  }
+}

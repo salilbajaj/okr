@@ -1,0 +1,37 @@
+.accordion {
+  width: 100px;
+  margin: 2rem auto;
+}
+.accordion-item{
+    position: relative;    
+  }
+
+.accordion-item::after {
+  content: "";
+  position: absolute;
+  left: 38px;
+  top: 52px;
+  height: calc(100% - 52px);
+  width: 2px;
+  z-index: -1;
+  background-color:#d8e2f6;
+}
+.accordion-title {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+
+.accordian-angle {
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+}
+.user-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
